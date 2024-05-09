@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-family: "Abril Fatface", cursive;
+}
+
+  body {
+      font-family: "Poppins", sans-serif;
+      
+      animation: gradientAnimation 10s ease infinite alternate;
+  }
+  
+  @keyframes gradientAnimation {    /* Animazione  */
+      0% {
+          background-position: 0% 50%;
+      }
+      100% {
+          background-position: 100% 50%;
+      }
+  }
+
+
+
+#submitButton {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+    height: 40px; 
+    line-height: 30px; 
+    margin: 0 auto; 
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    white-space: nowrap;
+    width: 50; 
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+    
+  }
+  
+  #submitButton:hover {
+    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  }
+  
+  
+ 
+  .input {
+      text-align: center;
+      margin: 50px auto;
+      animation: fadeInDown 1s ease;
+  }
+  
+  @keyframes fadeInDown {     /* Animazione  */
+      from {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  input[type="submit"] {
+    padding: 15px 40px;
+   
+    border: none;
+    border-radius: 50px;
+    font-family: "Fredoka One", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #FFD700, #FFA500); 
+}
+  
+  .input input[type="text"] {
+      width: 80%;
+      max-width: 600px;
+      height: 55px;
+      padding: 15px;
+      background: #FFDAB9;
+      border: none;
+      border-radius: 50px;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: #333;
+  }
+  
+ 
+  .card {
+      width: 70%;
+      max-width: 800px;
+      background: #F0FFFF;
+      height: auto;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      animation: zoomIn 1s ease;
+  }
+  
+  @keyframes zoomIn {         /* Animazione  */
+      from {
+          transform: scale(0.5);
+          opacity: 0;
+      }
+      to {
+          transform: scale(1);
+          opacity: 1;
+      }
+  }
+  
+  
+  .close {
+      float: right;
+      margin-top: -10px;
+      cursor: pointer;
+  }

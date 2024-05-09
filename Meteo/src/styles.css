@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#FFD700, #FF8C00);
+}
+.footer {
+    background-color: orange;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+  }
+  
